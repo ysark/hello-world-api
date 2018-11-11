@@ -5,6 +5,7 @@
 
 # dependencies
 /build
+/bin
 
 # IDEs and editors
 /.idea
@@ -16,6 +17,7 @@
 *.sublime-workspace
 
 # IDE - VSCode
+.vscode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
