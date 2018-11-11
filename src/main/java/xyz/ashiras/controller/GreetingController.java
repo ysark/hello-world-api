@@ -2,7 +2,6 @@ package xyz.ashiras.controller;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -21,22 +20,15 @@ import xyz.ashiras.service.GreetingService;
 @RequestMapping("/greeting")
 public class GreetingController {
 
-  // private static final String template = "Hello, %s!";
-  // private final AtomicLong counter = new AtomicLong();
-
-  private final GreetingService service;
-
   @Autowired
-  public GreetingController(GreetingService service) {
-    this.service = service;
-  }
+  private GreetingService service;
 
   @GetMapping()
   public List<Books> get(@RequestParam(value = "name", defaultValue = "") String name) {
     return name.isEmpty() ? this.service.findAll() : this.service.searchByName(name);
   }
 
-  @PostMapping(produces = "application/json")
+  @PostMapping()
   public void post(@RequestBody Greeting greeting) {
     // code
   }
