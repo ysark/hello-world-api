@@ -9,11 +9,11 @@ import org.springframework.transaction.annotation.Transactional;
  *
  * @author
  */
-@Component // Springで管理されるコンポーネント
-@Transactional // 本来はここでトランザクションを管理する。今回はBookRespositoryにアクセスするだけなのであまり意味は無い
+@Component // Spring で管理されるコンポーネント
+@Transactional // 本来はここでトランザクションを管理する。今回は GreetingRepository にアクセスするだけなのであまり意味は無い
 public class GreetingService {
 
-  @Autowired // Springで管理されているコンポーネントからGreetingServiceであるクラスを取ってくる
+  @Autowired // Spring で管理されているコンポーネントから GreetingRepository であるクラスを取ってくる
   GreetingRepository repository;
 
   public List<String> searchByTitle(String title) {

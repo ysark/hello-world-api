@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
  *
  * @author
  */
-@Repository // Springにコンポーネントとして管理されるDBにアクセスするためのクラス
+@Repository // Spring にコンポーネントとして管理されるDBにアクセスするためのクラス
 public interface GreetingRepository extends JpaRepository<String, Long> {
   @Query("select b from Book b where b.title like %:title%")
   List<String> searchByTitle(String title);
