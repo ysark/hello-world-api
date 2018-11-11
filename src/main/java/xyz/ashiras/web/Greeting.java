@@ -1,4 +1,4 @@
-package xyz.ashiras;
+package xyz.ashiras.web;
 
 public class Greeting {
 

@@ -1,4 +1,4 @@
-package xyz.ashiras;
+package xyz.ashiras.web;
 
 import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.web.bind.annotation.GetMapping;
