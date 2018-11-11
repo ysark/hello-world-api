@@ -5,12 +5,18 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import xyz.ashiras.model.Books;
+
 /**
  *
- * @author
+ * @author Fumio SAGAWA
  */
-@Repository // Spring にコンポーネントとして管理されるDBにアクセスするためのクラス
-public interface GreetingRepository extends JpaRepository<String, Long> {
-  @Query("select b from Book b where b.title like %:title%")
-  List<String> searchByTitle(String title);
+@Repository // Springにコンポーネントとして管理されるDBにアクセスするためのクラス
+public interface GreetingRepository extends JpaRepository<Books, Long> {
+  // BookJDBCCompornentのSQLをJPQLで書き直した例。
+  @Query("select name from Books")
+  List<Books> findAll();
+
+  @Query("select name from Books where name like %:name%")
+  List<Books> searchByName(final String name);
 }

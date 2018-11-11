@@ -1,4 +1,4 @@
-package xyz.ashiras.controller;
+package xyz.ashiras.model;
 
 public class Greeting {
 
