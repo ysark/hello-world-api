@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity // JPAのエンティティ(DBとJavaをマッピングしているクラス)
-@Table(name = "BOOKS") // DBに作成されるテーブル名称
+@Table(name = "T_BOOKS") // DBに作成されるテーブル名称
 public class Books implements Serializable {
 
   private static final long serialVersionUID = -7065258559836985729L;
