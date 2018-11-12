@@ -6,6 +6,8 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.lang.NonNull;
+
 /**
  * T_BOOKS テーブルアクセスのためのモデル
  * 
@@ -18,8 +20,10 @@ public class Books implements Serializable {
   private static final long serialVersionUID = -7065258559836985729L;
 
   @Id
+  @NonNull
   private String name;
 
+  @NonNull
   private String comments;
 
   public String getName() {
