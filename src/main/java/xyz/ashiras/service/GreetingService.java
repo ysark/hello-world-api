@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 import xyz.ashiras.model.Books;
 
 /**
- *
+ * 
  * @author Fumio SAGAWA
  */
 @Component // Spring で管理されるコンポーネント

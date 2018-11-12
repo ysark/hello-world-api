@@ -6,6 +6,11 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * T_BOOKS テーブルアクセスのためのモデル
+ * 
+ * @author Fumio SAGAWA
+ */
 @Entity // JPAのエンティティ(DBとJavaをマッピングしているクラス)
 @Table(name = "T_BOOKS") // DBに作成されるテーブル名称
 public class Books implements Serializable {

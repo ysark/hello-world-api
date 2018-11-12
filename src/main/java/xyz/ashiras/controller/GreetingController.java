@@ -13,9 +13,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import xyz.ashiras.model.Books;
-import xyz.ashiras.model.Greeting;
 import xyz.ashiras.service.GreetingService;
 
+/**
+ *
+ * @author Fumio SAGAWA
+ */
 @RestController
 @RequestMapping("greeting")
 public class GreetingController {
@@ -29,12 +32,12 @@ public class GreetingController {
   }
 
   @PostMapping()
-  void post(@RequestBody Greeting greeting) {
+  void post(@RequestBody Books books) {
     // code
   }
 
   @PutMapping()
-  void put(@RequestBody Greeting greeting) {
+  void put(@RequestBody Books books) {
     // code
   }
 
