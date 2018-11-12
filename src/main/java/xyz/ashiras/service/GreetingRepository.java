@@ -13,10 +13,9 @@ import xyz.ashiras.model.Books;
  */
 @Repository // Springにコンポーネントとして管理されるDBにアクセスするためのクラス
 public interface GreetingRepository extends JpaRepository<Books, Long> {
-  // BookJDBCCompornentのSQLをJPQLで書き直した例。
-  @Query("select name from Books")
+  @Query("select b from Books b")
   List<Books> findAll();
 
-  @Query("select name from Books where name like %:name%")
+  @Query("select b from Books b where b.name like %:name%")
   List<Books> searchByName(final String name);
 }

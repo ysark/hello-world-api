@@ -17,34 +17,34 @@ import xyz.ashiras.model.Greeting;
 import xyz.ashiras.service.GreetingService;
 
 @RestController
-@RequestMapping("/greeting")
+@RequestMapping("greeting")
 public class GreetingController {
 
   @Autowired
-  private GreetingService service;
+  GreetingService service;
 
   @GetMapping()
-  public List<Books> get(@RequestParam(value = "name", defaultValue = "") String name) {
+  List<Books> get(@RequestParam(value = "name", defaultValue = "") String name) {
     return name.isEmpty() ? this.service.findAll() : this.service.searchByName(name);
   }
 
   @PostMapping()
-  public void post(@RequestBody Greeting greeting) {
+  void post(@RequestBody Greeting greeting) {
     // code
   }
 
   @PutMapping()
-  public void put(@RequestBody Greeting greeting) {
+  void put(@RequestBody Greeting greeting) {
     // code
   }
 
   @DeleteMapping()
-  public void delete(@RequestParam(value = "name", defaultValue = "World") String name) {
+  void delete(@RequestParam(value = "name", defaultValue = "World") String name) {
     // code
   }
 
   @PatchMapping()
-  public void patch(@RequestParam(value = "name", defaultValue = "World") String name) {
+  void patch(@RequestParam(value = "name", defaultValue = "World") String name) {
     // code
   }
 }
