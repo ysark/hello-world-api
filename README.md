@@ -1,3 +1,5 @@
+[![wercker status](https://app.wercker.com/status/495df917b6204d1e270037d27b3f4bcf/s/master "wercker status")](https://app.wercker.com/project/byKey/495df917b6204d1e270037d27b3f4bcf)
+
 # Java 開発環境の構築
 
 1. jdk の設定
