@@ -1,4 +1,4 @@
-[![wercker status](https://app.wercker.com/status/495df917b6204d1e270037d27b3f4bcf/s/master "wercker status")](https://app.wercker.com/project/byKey/495df917b6204d1e270037d27b3f4bcf)
+[![wercker status](https://app.wercker.com/status/498a214bb83d03297cf48844249b0b88/s/master "wercker status")](https://app.wercker.com/project/byKey/498a214bb83d03297cf48844249b0b88)
 
 # Java 開発環境の構築
 
