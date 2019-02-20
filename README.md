@@ -67,4 +67,3 @@ $ gradle run
 |- model       OR-Mapper および POJO
 |- Service     Transaction Manager　　および JPA
 ```
-
